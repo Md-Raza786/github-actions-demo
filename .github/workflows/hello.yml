@@ -1,0 +1,13 @@
+name: Say Hello Action
+
+on:
+  push:
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run my JS action
+        uses: Md-Raza786/my-js-action@v1
+        with:
+          name: "Hamid"

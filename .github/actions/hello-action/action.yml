@@ -1,0 +1,14 @@
+name: "Hello Action"
+description: "Beginner custom GitHub Action"
+
+inputs:
+  name:
+    description: "Your name"
+    required: true
+
+runs:
+  using: "composite"
+  steps:
+    - name: Print Hello Message
+      run: echo "Hello ${{ inputs.name }}! Welcome to GitHub Actions 🎉"
+      shell: bash
